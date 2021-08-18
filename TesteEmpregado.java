@@ -1,12 +1,12 @@
 public class TesteEmpregado{
-    public static void main (String){
+    public static void main (String... args){
         Empregado e1 = new Empregado();
         Empregado e2 = new Empregado();
         Empregado e3 = new Empregado();
         
         e1.setTipo(1);
         e2.setTipo(2);
-        e2.setTipo(2);
+        e2.setTipo(3);
 
         e1.setSalario(1900);
         e2.setSalario(1400);

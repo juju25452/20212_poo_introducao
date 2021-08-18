@@ -3,9 +3,11 @@ public class Empregado {
     private int idade;
     private int tipo;
     private double salario;
+    private double comissao;
     private double bonus;
+    
 
-    public void setTipo (int Tipo);{
+    public void setTipo (int tipo){
         this.tipo = tipo;
     }
 
@@ -27,13 +29,13 @@ public class Empregado {
 
 
     public double calculaSalario(){
-        if (tipo ==1 ){
+        if (tipo == 1 ){
             return salario;
         }
-        else if (tipo ==2){
+        else if (tipo == 2){
             return salario + salario * comissao;
         }
-        else if (tipo ==3){
+        else if (tipo == 3){
             return salario + bonus;
         }
         return 0;
